@@ -3,7 +3,7 @@
 
 Preview | نتیجه ی کار 😊😉
 
-commandcheat.netlify.app
+https://commandcheat.netlify.app/
 
 
 
