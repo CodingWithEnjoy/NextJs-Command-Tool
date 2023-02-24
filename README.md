@@ -1,9 +1,7 @@
 # NextJs-Command-Tool
 
 
-Preview | نتیجه ی کار 😊😉
-
-https://commandcheat.netlify.app/
+دستورات yarn, npm, git, unix را یکجا داشته باشید 😊😊😊
 
 
 
