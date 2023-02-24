@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html body {
+	padding: 0;
+	margin: 0;
+	transition: background-color 0.15s ease-in-out;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+@media (prefers-reduced-motion: reduce) {
+	* {
+		animation: none;
+		transition: none;
+	}
+}
+
+a,
+a:visited {
+	color: inherit;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+.display-linebreak {
+	white-space: pre-line;
+}
+
+[data-theme="dark"] {
+	background-color: #181926;
+}
+
+[data-theme="light"] {
+	background-color: #e5e5e5;
+}

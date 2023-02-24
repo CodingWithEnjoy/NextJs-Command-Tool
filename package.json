@@ -1,0 +1,73 @@
+{
+  "name": "dev-cheats",
+  "version": "1.0.0",
+  "homepage": "https://codingwithenjoy.github.io/NextJs-Command-Tool/",
+  "description": "An Interactive Cheatsheet For Various Command Line Tools",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "prepare": "husky install",
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "format": "prettier . --write",
+    "test": "ava"
+  },
+  "dependencies": {
+    "@next/font": "^13.1.6",
+    "axios": "^1.3.3",
+    "next": "13.1.4",
+    "next-absolute-url": "^1.2.2",
+    "next-global-css": "^1.3.1",
+    "next-seo": "^5.15.0",
+    "next-themes": "^0.2.1",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-icons": "^4.7.1",
+    "react-spinners": "^0.13.8",
+    "swr": "^1.3.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.13",
+    "ava": "^5.2.0",
+    "eslint": "<8.32.0",
+    "eslint-config-next": "13.1.4",
+    "eslint-config-prettier": "^8.6.0",
+    "eslint-plugin-json": "^3.1.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "husky": "^8.0.3",
+    "lint-staged": "^13.1.0",
+    "postcss": "^8.4.21",
+    "prettier": "^2.8.3",
+    "tailwindcss": "^3.2.7",
+    "tw-colors": "^1.1.3"
+  },
+  "browserslist": {
+    "production": [
+      ">10%",
+      "not dead",
+      "not ie 11",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": [
+      "prettier --write",
+      "eslint --fix"
+    ],
+    "public/data/*.json": [
+      "eslint"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "node ./"
+    }
+  }
+}
